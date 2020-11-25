@@ -15,7 +15,6 @@ module.exports = {
             .setValue('@mainQueryInput', location)                
         },
         setDate(date1, date2) {
-            console.log(date1)
             return this
             .click('[data-testid="structured-search-input-field-split-dates-0"]')
             .waitForElementVisible(`[data-testid="datepicker-day-${date1}"]`)

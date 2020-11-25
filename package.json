@@ -12,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "geckodriver": "^1.21.0",
-    "nightwatch": "^1.5.1"
+    "nightwatch": "^1.5.1",
+    "node-fetch": "^2.6.1"
   },
   "dependencies": {
     "chromedriver": "^87.0.0",
