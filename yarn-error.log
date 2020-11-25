@@ -1,0 +1,50 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn webdriver-update --versions.chrome="Google Chrome 86.0.4240.111 "
+
+PATH: 
+  /usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/omril/bin:/home/omril/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.18.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/omril/workspace/nightwatch/package.json: Unexpected token } in JSON at position 186
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/util/fs.js:755:57
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:17:30)
+      at /usr/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:28:13
+
+npm manifest: 
+  {
+    "name": "nightwatch",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "nightwatch",
+      "webdriver-update": "webdriver-manager update",
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "geckodriver": "^1.21.0",
+      "nightwatch": "^1.5.1"
+    },
+    "dependencies": {
+      "chromedriver": "^87.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
